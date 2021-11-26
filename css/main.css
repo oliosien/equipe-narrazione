@@ -1569,11 +1569,13 @@ background-attachment:scroll;
 background-size:cover;
 -webkit-filter:blur($(body.background.blur));
 filter:blur($(body.background.blur));
-height:calc(100% + 2 * $(body.background.blur));
+/*height:calc(100% + 2 * $(body.background.blur));*/
+height:100%;
 left:$(0 - body.background.blur);
 position:absolute;
 top:$(0 - body.background.blur);
-width:calc(100% + 2 * $(body.background.blur))
+/*width:calc(100% + 2 * $(body.background.blur))*/
+width:100%
 }
 .bg-photo-overlay{
 background:rgba(0,0,0,.26);
