@@ -6,7 +6,7 @@
     <title><data:view.title.escaped/></title>
     <b:include data='blog' name='all-head-content'/>
 
-    <b:skin version='1.3.3'><![CDATA[/*! normalize.css v3.0.1 | MIT License | git.io/normalize */html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height:auto}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:bold}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}
+    <b:skin version='1.3.3'><![CDATA[/*! normalize.css v3.0.1 | MIT License | git.io/normalize */html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figfcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height:auto}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:bold}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}
 /*
 <!-- Constants -->
 
@@ -24,7 +24,7 @@
 
 <!-- Variable definitions -->
 
-<Variable name="keycolor" description="Main Color" type="color" default="#2196f3"  value="#2196f3"/>
+<Variable name="keycolor" description="Main Color" type="color" default="#2196f3"  value="#9e9e9e"/>
 <Variable name="startSide" description="Start side in blog language" type="automatic" default="left" hideEditor="true" />
 <Variable name="endSide" description="End side in blog language" type="automatic" default="right" hideEditor="true" />
 
@@ -34,15 +34,15 @@
       default="$(robotoNormal15)"  value="15px Roboto, sans-serif"/>
   <Variable name="body.text.color" description="Color"
       type="color"
-      default="#757575"  value="#757575"/>
+      default="#757575"  value="#797979"/>
 </Group>
 
 <Group description="Backgrounds">
   <Variable name="body.background.height" description="Background height"
       type="length"
       min="420px"
-      max="640px"
-      default="480px"  value="480px"/>
+      max="1062px"
+      default="480px"  value="1062px"/>
 
   <Variable name="body.background" description="Background"
       color="$(body.background.color)"
@@ -51,10 +51,10 @@
 
   <Variable name="body.background.color" description="Body background color"
       type="color"
-      default="#eee"  value="#eeeeee"/>
+      default="#eee"  value="#efefef"/>
   <Variable name="posts.background.color" description="Post background color"
       type="color"
-      default="#fff"  value="#ffffff"/>
+      default="#fff"  value="#FFFFFF"/>
   <Variable name="body.background.blur" description="Background blur"
       type="length"
       min="0px"
@@ -65,10 +65,10 @@
 <Group description="Links">
   <Variable name="body.link.color" description="Link color"
       type="color"
-      default="#2196f3"  value="#2196f3"/>
+      default="#2196f3"  value="#000000"/>
   <Variable name="body.link.visited.color" description="Visited link color"
       type="color"
-      default="$(body.link.color)"  value="#2196f3"/>
+      default="$(body.link.color)"  value="#000000"/>
   <Variable name="body.link.hover.color" description="Link Hover Color"
       type="color"
       default="$(body.link.color)"  value="#2196f3"/>
@@ -95,7 +95,7 @@
       default="700 normal $(size) $(family)"  value="700 normal $(size) $(family)"/>
   <Variable name="tabs.color" description="Text color"
       type="color"
-      default="#ccc"  value="#cccccc"/>
+      default="#ccc"  value="#ffffff"/>
   <Variable name="tabs.selected.color" description="Selected color"
       type="color"
       default="#fff"  value="#ffffff"/>
@@ -113,7 +113,7 @@
 <Group description="Posts" selector="div.widget.Blog">
   <Variable name="posts.title.color" description="Post title color"
       type="color"
-      default="#212121"  value="#212121"/>
+      default="#212121"  value="#3b3b3b"/>
   <Variable name="posts.title.font" description="Post title font"
       type="font"
       default="$(robotoBold22)"  value="bold 22px Roboto, sans-serif"/>
@@ -128,17 +128,17 @@
       default="$(body.text.color)"  value="#757575"/>
   <Variable name="posts.byline.color" description="Post byline color"
       type="color"
-      default="rgba(0, 0, 0, 0.54)"  value="rgba(0, 0, 0, 0.54)"/>
+      default="rgba(0, 0, 0, 0.54)"  value="rgba(55,55,55,0.537)"/>
   <Variable name="blockquote.font" description="Blockquote font"
       type="font"
       default="$(robotoLightItalic15)"  value="italic 300 15px Roboto, sans-serif"/>
   <Variable name="blockquote.color" description="Blockquote color"
       type="color"
-      default="#444"  value="#444444"/>
+      default="#444"  value="#4e4e4e"/>
   <Variable name="posts.icons.color"
       description="Post icons color"
       type="color"
-      default="#707070"  value="#707070"/>
+      default="#707070"  value="#747474"/>
 </Group>
 
 <Group description="Search">
@@ -209,11 +209,11 @@
   <Variable name="sidebar.backgroundColorTop"
       description="Background color (Top)"
       type="color"
-      default="#f7f7f7"  value="#ffffff"/>
+      default="#f7f7f7"  value="#f8f8f8"/>
   <Variable name="sidebar.backgroundColorTopHD"
       description="Background color (Top) - HD"
       type="color"
-      default="rgba(255, 255, 255, 1)"  value="#f7f7f7"/>
+      default="rgba(255, 255, 255, 1)"  value="#ffffff"/>
   <Variable name="sidebar.backgroundColorBottom"
       description="Background color (Bottom)"
       type="color"
@@ -221,24 +221,24 @@
   <Variable name="sidebar.separator.color"
       description="Separator color"
       type="color"
-      default="#ccc"  value="#cccccc"/>
+      default="#ccc"  value="#cdcdcd"/>
   <Variable name="widget.title.color"
       description="Gadget title color"
       type="color"
-      default="#212121"  value="#212121"/>
+      default="#212121"  value="#3b3b3b"/>
   <Variable name="sidebar.icons.color"
       description="Sidebar icons color"
       type="color"
-      default="#707070"  value="#707070"/>
+      default="#707070"  value="#747474"/>
 </Group>
 
 <Group description="Author profile" selector='.widget.Profile'>
   <Variable name="profile.title.color" description="Profile title color"
       type="color"
-      default="rgba(0,0,0,0.52)"  value="rgba(0,0,0,0.52)"/>
+      default="rgba(0,0,0,0.52)"  value="rgba(55,55,55,0.518)"/>
   <Variable name="profile.text.color" description="Profile text color"
       type="color"
-      default="rgba(0, 0, 0, 0.54)"  value="rgba(0, 0, 0, 0.54)"/>
+      default="rgba(0, 0, 0, 0.54)"  value="rgba(55,55,55,0.537)"/>
   <Variable name="profile.link.color" description="Profile link color"
       type="color"
       default="$(posts.title.color)"  value="#212121"/>
@@ -268,7 +268,7 @@
   <Variable name="attribution.icon.color" description="Attribution icon color"
       type="color"
       default="#707070"
-      hideEditor="true"  value="#707070"/>
+      hideEditor="true"  value="#747474"/>
 </Group>
 
 <Group description="Widths">
@@ -1360,6 +1360,7 @@ transition-timing-function:cubic-bezier(.4,0,.6,1);
 transform:translateX($(sidebar.width * -1))
 }
 }
+/*
 @media screen and (min-width:$(sidebar.width + content.width + content.margin * 2)){
 .sidebar-container{
 position:absolute;
@@ -1371,6 +1372,7 @@ right:auto
 display:none
 }
 }
+*/
 .dialog{
 box-shadow:0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
 background:$(posts.background.color);
@@ -1885,9 +1887,17 @@ display:none
 .search-focused>*{
 visibility:visible
 }
-.search-focused .hamburger-menu{
-visibility:visible
+.search-focused{
+  visibility:visible
 }
+.search.focused{
+  width:100% !important
+}
+  
+.hamburger-menu {
+  display:none
+} 
+ 
 .item-view .search-focused .blog-name,.sticky .search-focused .blog-name{
 opacity:0
 }
@@ -1946,7 +1956,8 @@ color:$(posts.text.color)
 background:$(posts.background.color);
 min-height:40px;
 padding:30px 40px;
-width:auto
+width:auto;
+opacity: .85;
 }
 .Blog .blog-posts .post-outer-container:last-child{
 margin-bottom:0
@@ -2408,6 +2419,7 @@ overflow-y:scroll
 body.sidebar-visible .bg-photo-container{
 overflow-y:scroll
 }
+/*
 @media screen and (min-width:$(sidebar.width + content.width + content.margin * 2)){
 .sidebar-container{
 margin-top:$(body.background.height);
@@ -2457,6 +2469,7 @@ width:100%
 display:none
 }
 }
+*/
 .post-snippet.snippet-container{
 max-height:120px
 }
@@ -2616,6 +2629,12 @@ div.post-filter-message div{
 padding:8px 16px
 }
 }
+
+#footer {
+  display: none;
+}
+
+/*
 @media screen and (min-width:$(sidebar.width + content.width + content.margin * 2)){
 body{
 position:relative
@@ -2656,6 +2675,7 @@ body.collapsed-header.item-view .centered-top-container .blog-name{
 margin-left:40px
 }
 }
+*/
 ]]></b:skin>
 
     <b:template-skin>
@@ -4379,7 +4399,6 @@ margin-left:40px
               </main>
             </div>
             
-<!-- Modified Enrico 9-8-21 - Remove reference to Elkan, images used are ours.
 
             <b:section class='footer' id='footer' name='Footer' showaddelement='false' tag='footer'>
               <b:widget id='Attribution1' locked='true' title='' type='Attribution' visible='true'>
@@ -4417,8 +4436,8 @@ margin-left:40px
 </b:includable>
               </b:widget>
             </b:section>
--->
-          </div>
+
+            </div>
         </div>
       </b:with>
     </div>
@@ -4430,7 +4449,7 @@ margin-left:40px
         <b:class cond='data:widgets none w =&gt; w.sectionId == &quot;sidebar_top&quot;' name='no-items'/>
 
         <b:section class='sidebar_top' id='sidebar_top' name='Sidebar (Top)'>
-          <b:widget id='Profile1' locked='true' title='Informazioni personali' type='Profile' visible='true'>
+          <b:widget id='Profile1' locked='true' title='Informazioni personali' type='Profile' visible='false'>
             <b:widget-settings>
               <b:widget-setting name='showaboutme'>true</b:widget-setting>
               <b:widget-setting name='showlocation'>false</b:widget-setting>
