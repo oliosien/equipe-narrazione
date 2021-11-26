@@ -4377,6 +4377,8 @@ margin-left:40px
               </main>
             </div>
             
+<!-- Modified Enrico 9-8-21 - Remove reference to Elkan, images used are ours.
+
             <b:section class='footer' id='footer' name='Footer' showaddelement='false' tag='footer'>
               <b:widget id='Attribution1' locked='true' title='' type='Attribution' visible='true'>
                 <b:widget-settings>
@@ -4413,6 +4415,7 @@ margin-left:40px
 </b:includable>
               </b:widget>
             </b:section>
+-->
           </div>
         </div>
       </b:with>
